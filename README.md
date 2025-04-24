@@ -1,60 +1,79 @@
 # python-progress
 Python learning progress | Based on chatgpt roadmap
 
+✅ 1. Property Decorator (@property)
+Kenapa penting: Bikin kamu bisa mengatur akses atribut dengan cara bersih dan profesional, terutama saat bikin aplikasi dengan UI (misal PyQt atau Tkinter).
+
+Contoh: Menampilkan status is_logged_in di UI tapi disimpan sebagai method di belakang layar.
+
+✅ 2. Dunder (Magic) Methods
+__str__, __repr__, __eq__, __len__, dsb.
+
+Kenapa penting: Kalau kamu bikin aplikasi dengan objek kompleks (misal sistem inventory, form input), ini bikin class kamu bisa diprint, dibanding, atau disortir secara Pythonic.
+
+✅ 3. Event-Driven Programming (via GUI Frameworks)
+Framework seperti Tkinter, PyQt, PySide, atau Kivy.
+
+Kenapa penting: Hampir semua aplikasi desktop itu event-driven (klik tombol, isi form, drag-drop).
+
+Kamu perlu ngerti cara binding function ke event, update UI dari state objek, dan atur logika antar komponen.
+
+✅ 4. File Handling & Serialization
+open(), with, pickle, json, csv.
+
+Kenapa penting: Desktop app biasanya butuh load/simpan data, misal setting aplikasi, database lokal, atau history.
+
+✅ 5. Design Patterns (Factory, MVC, Singleton, Observer)
+Kenapa penting: Supaya aplikasi kamu scalable dan gampang dipelihara.
+
+MVC misalnya, sering dipakai dalam PyQt untuk pisah logic dan UI.
 
 
-📚 Tahapan Belajar Struktur Data Lanjutan + OOP
-🔹 Minggu 1: Struktur Data Lanjutan
-Materi:
+-------------------------------------------------------------------
 
-List comprehension X
+🔧 Roadmap Belajar Desktop Programmer dengan Python
+1. Pemantapan OOP dan Struktur Proyek
+Buat mini-project OOP (misal: sistem kasir, sistem perpustakaan, dll).
 
-Tuple: sifat immutable, kapan dipakai X
+Pelajari modular programming dan struktur folder Python yang baik.
 
-Set: data unik, operasi set X
+2. GUI Programming dengan Tkinter
+Pengenalan Tkinter dan widget dasar.
 
-Dictionary: nesting, looping, .get(), .items(), dll X
+Event Handling dan layout (grid, pack, place).
 
-Fungsi built-in seperti zip(), enumerate(), sorted() dengan key X
+Membuat form input, tabel, dan navigasi sederhana.
 
-Latihan proyek kecil:
+3. Mengelola Data
+Dasar File Handling (txt, csv, json).
 
-Program analisa data transaksi (jumlah pemasukan terbesar, urutkan pengeluaran, dll)
+SQLite dengan sqlite3.
 
-Program pemetaan nilai siswa (pakai dictionary)
+Integrasi database ke GUI (form tambah/edit/hapus data).
 
-🔹 Minggu 2: Pengenalan OOP
-Materi:
+4. Paket dan Distribusi
+Belajar membuat executable dengan pyinstaller.
 
-Apa itu class dan object
+Struktur packaging Python untuk aplikasi.
 
-__init__() dan self x
+5. Proyek Mini Desktop App
+Contoh:
 
-Attribute dan method X
+Aplikasi catatan harian.
 
-Instance vs class variable X
+Aplikasi manajemen keuangan sederhana.
 
-Method khusus: __str__, __repr__ X
+Aplikasi daftar tugas (To-do list) dengan filter.
 
-Latihan proyek kecil:
+6. Upgrade GUI dengan Library Tambahan
+Belajar ttkbootstrap atau customtkinter agar tampilan lebih modern.
 
-Buat class CatatanKeuangan untuk simpan data
+Alternatif: PyQt atau PySide jika ingin GUI lebih canggih.
 
-Buat class Transaksi yang menyimpan data pemasukan dan pengeluaran
+7. Fitur Tambahan (Opsional)
+Export ke PDF atau Excel.
 
-🔹 Minggu 3: OOP Lanjutan
-Materi:
+Sistem login sederhana (user/password).
 
-Inheritance (pewarisan class) X
+Multilanguage UI / Tema gelap-terang.
 
-Encapsulation (private/public)
-
-Polymorphism (method override)
-
-Composition (class dalam class)
-
-Latihan proyek kecil:
-
-Sistem manajemen akun keuangan dengan banyak pengguna
-
-Mini game sederhana berbasis class
